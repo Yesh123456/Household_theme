@@ -1,0 +1,206 @@
+// <!-- Yesh Jadav  UI Design: Meckanzie -->
+// For this file to be run this on cmd on windows for working with 
+// ruby install sass gem
+// // sass --watch styles.scss:styles.css
+// No need to make css folder
+// <!-- Yesh Jadav  UI by Meckanzie -->
+// ********************Variables*****************
+
+$main: #31323d;			//black
+$secondary: #2f302c;	//grey
+$white: #FFFFFF;
+$highlight: #f5ae58;	//orange
+
+// ********************Main Page***************
+
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Sora', sans-serif;
+}
+
+.wrapper{
+	width: 1140px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+// ***************************banner*****************
+
+.banner{
+	background: $main url(../images/poster.jpg);
+	background-repeat: repeat;
+	h1{
+		color: $white;
+		text-transform: uppercase;
+		padding: 2em 0;
+		margin: 0;
+		font-size: 4em;
+		line-height: .85;
+	}
+}
+
+// **********************header***************
+
+.nav{
+	background: $secondary;
+	a,label{
+		text-transform: uppercase;
+		font-size: 1.25em;
+		text-decoration: none;
+		color: $white;
+		font-weight: 700;
+		margin-right: 2em;
+		&:hover{
+			color: $highlight;
+		}
+	}
+	label{
+		margin-right: 0;
+		border-right: 1px solid $highlight;
+		padding-right: 1.5em;
+		&:hover{
+			color: $white;
+		}
+	}
+	input[type="search"]{
+		background: transparent;
+		outline: none;
+		border: none;
+		color: $white;
+		font-style: italic;
+		font-size: 1.25em;
+		font-weight: 400;
+		padding: 2em 1em;
+	}
+}
+
+// ************************View**************
+
+.resources{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li{
+		float: left;
+		display: inline-block;
+		width: 25%;
+		position: relative;
+		overflow: hidden;
+		transition: transform .4s, opacity .1s .3s;
+		img{
+			width: 100%;
+			max-width: 100%;
+		}
+		.resources_info{
+			background: rgba($highlight,.8);
+			padding: 2em 10%;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top:auto;
+			bottom: 0;
+			opacity: 0;
+			transform:translateY(100%);
+			transition: transform .5s,opacity .1s .3s;
+			h2{
+				color: $main;
+				font-size: 1.3em;
+				line-height: 1;
+				margin-bottom: 1em;
+				text-transform: uppercase;
+			}
+			.button{
+				border: 2px solid $white;
+				padding: 1em 1.15em;
+				border-radius: .5em;
+				color: $white;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-size: .9em;
+				font-weight: 700;
+				transition: all .4s ease-in-out;
+				&:hover{
+					border:2px solid $main;
+					color: $main;
+				}
+			}
+			.price{
+				display: inline;
+				font-weight: 700;
+				color: $main;
+				padding: 1em;
+			}
+		}
+	}
+	li:hover{
+		img{
+			transform:scale(1.5);
+			transition: transform .4s, opacity .3s .1s;
+		}
+		.resources_info{
+			opacity: 1;
+			transform: translateY(0%);
+			transition: transform .4s, opacity.1s;
+		}
+	}
+}
+
+// ********************footer*******************
+
+#main_footer{
+	padding: 2.5em 2.5em;
+	text-align: center;
+	.copyright{
+		color: $secondary;
+		font-size: 1.3em;
+		margin: 0;
+	}
+	.links{
+		display: inline;
+	}
+	a{
+		color: $secondary;
+		font-size: 1em;
+		text-decoration: none;
+		margin: 0 .5em;
+		&:hover{
+			color: $highlight;
+		}
+	}
+}
+
+// ****************1250px**************
+
+@media only screen and (max-width: 1250px){
+.resources{
+	li{
+		width: 33.3%;
+	}
+}
+} 
+
+// ******************950px*************
+
+@media only screen and (max-width: 950px){
+.resources{
+	li{
+		width: 50%;
+	}
+}
+}
+
+// ********************600px*************
+
+@media only screen and (max-width: 600px){
+.resources{
+	li{
+		width: 100%;
+	}
+}
+}
+
+// <!-- Yesh Jadav  UI by Meckanzie -->
