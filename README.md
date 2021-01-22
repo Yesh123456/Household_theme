@@ -1,3 +1,19 @@
 # household
-Hello Codie :) This the template design you can preview here checkitout 
+
+******************
+INSTALLATION AND PREREQUITS
+******************
+
+: INSTALL SCSS IN YOUR SYSTEM.
+
+: DOWNLOAD MY FILE
+
+: THIS IS TEMPLATE VIEW OF THE SITE.
+
+: THIS ARE DESIGN FREE BUT STAR THIS IF YOUR USING.
+
+: THIS IS PREVIEW OF INTERIOR DESIGN SITE.
+
+: CHECKOUT
+
  https://yesh123456.github.io/household/index.html
