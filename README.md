@@ -7,7 +7,7 @@ This project is about creating a Interior Household appliances with some hoverin
 Install my-project as zip or clone.
 
 ```bash
-    git clone https://github.com/Yesh123456/todo.git
+    git clone https://github.com/Yesh123456/household.git
 ```
 
 Install Sass.(For Ubuntu)
